@@ -1,0 +1,24 @@
+{
+  "name": "typescript-course",
+  "version": "1.0.0",
+  "description": "> `npm install -g typescript`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "compile": "tsc app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitenlulla/typescript-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hitenlulla/typescript-course/issues"
+  },
+  "homepage": "https://github.com/hitenlulla/typescript-course#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
