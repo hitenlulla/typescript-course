@@ -21,7 +21,7 @@ console.log(person.role)
 // enum Role {ADMIN, READ_ONLY, AUTHOR};
 enum Role {ADMIN = 5, READ_ONLY, AUTHOR};
 
-const person2 :{
+const person23 :{
     name: string,
     age: number,
     hobbies: string[],
@@ -33,7 +33,7 @@ const person2 :{
     role : Role.ADMIN // Tuple
 }
 
-if(person2.role == Role.ADMIN){
+if(person23.role == Role.ADMIN){
     console.log("I am an admin")
 }
 

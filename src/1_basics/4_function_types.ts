@@ -1,10 +1,10 @@
 // 1. Function return type
-function add(n1: number, n2: number) : string {
+function add1(n1: number, n2: number) : string {
     // return n1 + n2
     return n1.toString() + n2.toString()
 }
 
-function printResult(res: string): void{
+function printResult1(res: string): void{
     console.log("Result " + res)
 }
 
@@ -13,7 +13,7 @@ function printResult2(res: string): undefined{
     return
 }
 
-printResult(add(5,12))
+printResult1(add1(5,12))
 
 // 2. Function as type
 // Take any function
@@ -22,10 +22,10 @@ printResult(add(5,12))
 // combineValues = printResult                          //<- This is allowed
 
 // Take any function that takes a function with params as numbers and return as string
-let combineValues: (a: number, b: number) => string;
-combineValues = add
+let combineValues1: (a: number, b: number) => string;
+combineValues1 = add1
 // combineValues = printResult                          //<- This is not allowed now
-console.log(combineValues(8,8))
+console.log(combineValues1(8,8))
 
 // Use case ^
 function addAndHandle(n1 : number, n2: number, cb : (num : number) => void){
